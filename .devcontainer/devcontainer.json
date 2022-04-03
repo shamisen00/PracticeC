@@ -6,6 +6,10 @@
 		"dockerfile": "Dockerfile",
 	},
 
+	"extensions": ["ms-vscode.cpptools-extension-pack",
+		"austin.code-gnu-global",
+		"DavidAnson.vscode-markdownlint"],
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
