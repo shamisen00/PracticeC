@@ -1,11 +1,11 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.209.6/containers/ubuntu
 {
-	"name": "C++",
-	"build": {
-		"dockerfile": "Dockerfile",
-	},
-
+	"name": "Cpp dev",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "dev",
+	"workspaceFolder": "/workspace",
+	
 	"extensions": ["ms-vscode.cpptools-extension-pack",
 		"austin.code-gnu-global",
 		"DavidAnson.vscode-markdownlint"],

@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  dev:
+    container_name: Cpp_dev
+
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+
+    volumes:
+      - ..:/workspace:cached
+    
+    working_dir: /workspace
+
+    tty: true
+
