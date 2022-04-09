@@ -1,5 +1,6 @@
 // C++の引数渡しは全て値渡しなので、データを変更したいならポインタで参照渡し
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 void ChangeToShohwa(int x)
 {

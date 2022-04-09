@@ -1,4 +1,5 @@
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 // int array[]とint* arrayは同じ
 void Display(int array[])
