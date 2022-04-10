@@ -8,10 +8,19 @@ services:
       context: ..
       dockerfile: .devcontainer/Dockerfile
 
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
     volumes:
       - ..:/workspace:cached
     
     working_dir: /workspace
-
     tty: true
+    stdin_open: true
+    command: nvidia-smi
 
